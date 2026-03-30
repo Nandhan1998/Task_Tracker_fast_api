@@ -3,7 +3,6 @@ from Task_Tracker.service_management import service as sr
 
 def project_creation_service(project_name: str):
 
-    
     if not project_name or project_name.strip() == "":
         return {"error": "Project name cannot be empty"}
 
@@ -13,5 +12,13 @@ def project_creation_service(project_name: str):
     # ✅ call service
     return sr.create_project(project_name)
 
+
 def see_all_projects():
     return sr.get_all_projects()
+
+
+def create_task(project_id: int,
+                task_name: str,
+                end_date: int,
+                status: int):
+    return sr.create_a_task(project_id, task_name, end_date, status)
