@@ -168,7 +168,7 @@ def delete_task(task_id: int):
 
 
 def update_task(task_id: int, status: int):
-    print("service====================\n=========================\n")
+    # print("service====================\n=========================\n")
     conn = None
     cursor = None
     try:

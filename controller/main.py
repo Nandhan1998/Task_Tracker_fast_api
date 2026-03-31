@@ -46,6 +46,6 @@ def task_delete(task_id: int):
 
 @app.post("/update_task")
 def task_update(task_id: int, status: Optional[int] = Query(0, description="1=in progress, 2=on hold, 3=completed")):
-    print("controller ====================\n=========================\n")
+    # print("controller ====================\n=========================\n")
 
     return rp.update_task(task_id,status)

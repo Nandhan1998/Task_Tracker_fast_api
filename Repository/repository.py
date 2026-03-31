@@ -48,7 +48,7 @@ def delete_task(task_id: int):
 
 
 def update_task(task_id: int, status: int):
-    print("repository====================\n=========================\n")
+    # print("repository====================\n=========================\n")
 
     if task_id < 0:
         return {"error": "enterd task id should be greater than 0"}
